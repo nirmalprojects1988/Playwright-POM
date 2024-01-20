@@ -1,5 +1,5 @@
 //@ts-check
-import{Page,expect} from "@playwright/test"
+import{type Page,expect} from "@playwright/test"
 
 export class LoginPage{
     readonly page:Page
@@ -18,6 +18,7 @@ export class LoginPage{
         this.btnlogin=page.getByRole('button', { name: 'Login' })
         this.lnklogout=page.getByText('Logout')
         this.logoutconfirmmtxt=page.getByRole('heading',{name: 'Account Logout'})
+        
 
     }
      async clickOnMyAccount(){
