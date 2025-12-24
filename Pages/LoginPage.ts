@@ -18,7 +18,6 @@ export class LoginPage{
         this.btnlogin=page.getByRole('button', { name: 'Login' })
         this.lnklogout=page.getByText('Logout')
         this.logoutconfirmmtxt=page.getByRole('heading',{name: 'Account Logout'})
-        
 
     }
      async clickOnMyAccount(){
